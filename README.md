@@ -62,6 +62,40 @@ Finding elements in search engines and large datasets efficiently.
 
 ****************************************************************************************************************************************************
 
+ALGORITHMS
+---
+
+## 🔍 Linear Search Algorithm
+
+This algorithm checks every element in the array sequentially until the target element is found.
+
+1.  **Start**
+2.  Input the **array** $arr[]$, **size** $n$, and the **target element** to search.
+3.  For each index $i$ from $0$ to $n-1$:
+    * If $arr[i] == target$, **return** $i$ (the index where the element is found).
+4.  If the loop ends without finding the element, **return $-1$** (indicating the element is not present).
+5.  **Stop**
+
+
+---
+
+## 🗂️ Binary Search Algorithm
+
+This algorithm is much faster but requires the input array to be **sorted**. It repeatedly divides the search interval in half.
+
+1.  **Start**
+2.  Input the **sorted array** $arr[]$, **size** $n$, and the **target element**.
+3.  Initialize **left** $= 0$ and **right** $= n-1$.
+4.  **Repeat** until $left \le right$:
+    * Calculate **mid** $= left + (right - left) / 2$.
+    * If $arr[mid] == target$, **return** $mid$ (the index where the element is found).
+    * Else if $arr[mid] < target$, set **left** $= mid + 1$ (search the right half).
+    * Else (if $arr[mid] > target$), set **right** $= mid - 1$ (search the left half).
+5.  If the element is not found (the loop terminates), **return $-1$**.
+6.  **Stop**
+
+***
+
 Time complexity:
 --------------------
 | Searching Technique | BEST | WORST    | AVERAGE  |
