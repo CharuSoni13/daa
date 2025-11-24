@@ -12,7 +12,7 @@ Searching is the process of locating a desired element (key) within a given set 
 
 Linear Search:
 --------------
-Linear search scans each element of the list one by one until the key is found or the list ends.
+Linear Search is the simplest searching technique. It checks each element in the list sequentially from start to end to find the required key.
 Can be used on sorted or unsorted data.
 Simple to understand and implement.
 
@@ -28,8 +28,13 @@ Requires sequential scan of entire list in the worst case.
 
 Binary Search:
 ----------------
-Binary search is a highly efficient technique that works only on sorted data. It repeatedly divides the list into two halves and compares the key with the middle element.
-Based on divide and conquer strategy.
+Binary Search is a highly efficient searching technique working on a Divide and Conquer approach. It repeatedly divides the search interval into two halves until the key is found.
+
+Important Condition
+
+✔ Data must be sorted before applying binary search
+✘ Cannot be applied on unsorted lists
+
 Searching becomes faster as the dataset size increases.
 
 Advantages:
@@ -42,7 +47,7 @@ Data must be sorted before searching.
 More complex implementation compared to linear search.
 Not suitable for frequently changing data (because sorting must be maintained).
 
-Linear Search is suitable for small and unsorted data, while Binary Search is faster and more efficient but requires sorted data. The choice of search method depends on dataset size and organization.
+Linear Search is suitable for small and unsorted data, while Binary Search is faster and more efficient but requires sorted data.The selection of the search technique depends on the structure and size of the dataset.
 
 ✅Applications of Linear Search
 ----------------------------------
